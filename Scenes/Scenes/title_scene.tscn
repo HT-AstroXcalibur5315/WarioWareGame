@@ -56,15 +56,15 @@ flip_h = true
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=1006030415]
 clip_contents = false
-offset_left = 222.0
-offset_top = 101.0
-offset_right = 970.0
-offset_bottom = 273.0
+offset_left = 263.0
+offset_top = 112.0
+offset_right = 906.0
+offset_bottom = 284.0
 theme_override_colors/default_color = Color(0.92156863, 0.99607843, 0.99215686, 1)
 theme_override_colors/font_outline_color = Color(0.09019608, 0.12156863, 0.35686275, 1)
 theme_override_constants/outline_size = 40
 theme_override_font_sizes/normal_font_size = 121
-text = "Space Chase
+text = "Star Chase
 "
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
