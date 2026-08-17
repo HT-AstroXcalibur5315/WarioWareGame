@@ -1,3 +1,63 @@
 [gd_scene format=3 uid="uid://dgq7ptxidrq7a"]
 
+[ext_resource type="Texture2D" uid="uid://202ysn3iuplt" path="res://Screenshot 2026-08-16 at 3.56.53 PM.png" id="1_sq8gn"]
+[ext_resource type="Texture2D" uid="uid://c2t24alnvl3kf" path="res://UFO-removebg-preview.png" id="2_sq8gn"]
+
 [node name="LevelScreen" type="Node2D" unique_id=377964775]
+
+[node name="Background" type="TextureRect" parent="." unique_id=774136575]
+offset_right = 1165.0
+offset_bottom = 704.0
+texture = ExtResource("1_sq8gn")
+
+[node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=1800254368]
+offset_left = 45.0
+offset_top = 132.0
+offset_right = 1119.0
+offset_bottom = 331.0
+theme_override_constants/separation = 11
+
+[node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=885914178]
+layout_mode = 2
+texture = ExtResource("2_sq8gn")
+expand_mode = 3
+
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=1109256612]
+layout_mode = 2
+texture = ExtResource("2_sq8gn")
+expand_mode = 3
+
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=2097609858]
+layout_mode = 2
+texture = ExtResource("2_sq8gn")
+expand_mode = 3
+
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=1077445916]
+layout_mode = 2
+texture = ExtResource("2_sq8gn")
+expand_mode = 2
+
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=205267292]
+layout_mode = 2
+texture = ExtResource("2_sq8gn")
+expand_mode = 2
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1846859856]
+offset_left = 430.0
+offset_top = 285.0
+offset_right = 716.0
+offset_bottom = 397.0
+theme_override_colors/font_outline_color = Color(0.08235294, 0.14117648, 0.41568628, 1)
+theme_override_constants/outline_size = 26
+theme_override_font_sizes/normal_font_size = 77
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1261100136]
+offset_left = 525.0
+offset_top = 411.0
+offset_right = 612.0
+offset_bottom = 486.0
+theme_override_colors/font_outline_color = Color(0.08235294, 0.13725491, 0.41568628, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 50
+text = "0.0"
