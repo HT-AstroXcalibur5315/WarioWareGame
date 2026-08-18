@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cja04p7w01t7v" path="res://Scenes/Scenes/title_scene.gd" id="1_difv5"]
 [ext_resource type="Texture2D" uid="uid://b6l21aksutx5w" path="res://Screenshot 2026-08-16 at 3.56.53 PM.png" id="1_tk6ir"]
-[ext_resource type="Texture2D" uid="uid://b4gqk1hgo3crg" path="res://monkey-removebg-preview-removebg-preview.png" id="3_kg7io"]
+[ext_resource type="Texture2D" uid="uid://b7l2x4ysv4sdl" path="res://monkey-removebg-preview-removebg-preview-removebg-preview (1).png" id="3_kg7io"]
 
 [node name="Title Screen" type="Node2D" unique_id=1080587908]
 script = ExtResource("1_difv5")
@@ -47,10 +47,10 @@ theme_override_font_sizes/font_size = 26
 text = "Quit"
 
 [node name="Background2" type="TextureRect" parent="." unique_id=1048722593]
-offset_left = -80.0
-offset_top = 189.0
-offset_right = 499.0
-offset_bottom = 768.0
+offset_left = -93.0
+offset_top = 217.0
+offset_right = 486.0
+offset_bottom = 796.0
 texture = ExtResource("3_kg7io")
 flip_h = true
 
