@@ -71,7 +71,7 @@ offset_left = -7.0
 offset_top = 368.0
 offset_right = 460.0
 offset_bottom = 425.0
-color = Color(0.77254903, 0.49803922, 0.2901961, 1)
+color = Color(0.7764706, 0.49411765, 0.2901961, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4" unique_id=691019019]
