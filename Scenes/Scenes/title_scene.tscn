@@ -10,7 +10,7 @@ script = ExtResource("1_difv5")
 [node name="Background" type="TextureRect" parent="." unique_id=1494886479]
 offset_left = -4.0
 offset_top = -5.0
-offset_right = 1161.0
+offset_right = 1159.0
 offset_bottom = 699.0
 texture = ExtResource("1_tk6ir")
 

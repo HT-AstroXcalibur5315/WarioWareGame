@@ -4,13 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://4n4clsnf3gyi" path="res://Screenshot_2026-08-17_at_4.00.53_PM-removebg-preview.png" id="2_2afuw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_j2w3y"]
-radius = 90.13878
+radius = 85.02353
 
 [node name="Player" type="CharacterBody2D" unique_id=12176208]
 script = ExtResource("1_ejpub")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=991919913]
-position = Vector2(418.75, 512.3811)
+position = Vector2(418.75, 511.3811)
 scale = Vector2(0.40233544, 0.40233546)
 texture = ExtResource("2_2afuw")
 
