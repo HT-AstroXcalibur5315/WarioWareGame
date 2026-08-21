@@ -1,10 +1,16 @@
 [gd_scene format=3 uid="uid://mjtqolmd6ipi"]
 
-[ext_resource type="Script" uid="uid://dalfw7yyhg3e5" path="res://node_2d.gd" id="1_uwdf1"]
+[ext_resource type="Script" uid="uid://v86hg1xxuvaa" path="res://Scenes/Scenes/themed_timer.gd" id="1_uwdf1"]
 
-[node name="Themed Timer" type="Node2D" unique_id=142063373]
+[node name="ThemedTimer" type="Node2D" unique_id=142063373]
 script = ExtResource("1_uwdf1")
 
 [node name="Timer" type="RichTextLabel" parent="." unique_id=1435945727]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 19.0
+offset_right = 90.0
+offset_bottom = 82.0
+theme_override_colors/default_color = Color(0.8509804, 0.9019608, 0.9607843, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_font_sizes/normal_font_size = 40
+text = "0.0"
