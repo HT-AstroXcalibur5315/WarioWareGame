@@ -25,12 +25,12 @@ func _process(_delta: float) -> void: # running every frame brochacho
 			get_tree().change_scene_to_file("res://scenes/done_screen.tscn") # change current play scene into another, but you make your own finish screen in a later challenge, dont worry abt this rn
 		else:
 			get_tree().change_scene_to_file("res://Scenes/Scenes/timer_screen.tscn") # go back to the intermission scene
-	
+			
 	if timer_end: # if the timer does end...
 		Global.minigames_done -=1 #go back a minigame
 		Global.lives -= 1 # lose ur lives
 		get_tree().change_scene_to_file("res://Scenes/Scenes/timer_screen.tscn") # back to intermission
-		
+	
 
 func garlic_collect() -> void: # cool function that you connect to those garlics
 	garlic_collected = garlic_collected +1

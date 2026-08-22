@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="StarChase"
+config/name="WarioWareGame"
 run/main_scene="uid://3rtrymsi55ds"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
