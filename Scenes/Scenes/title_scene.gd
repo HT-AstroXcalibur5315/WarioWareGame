@@ -13,7 +13,7 @@ func _process(_delta: float) -> void:
 
 func _on_start_pressed() -> void:
 	pass # Replace with function body.
-	get_tree().change_scene_to_file("res://Scenes/Scenes/level_scene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Scenes/timer_screen.tscn")
 
 
 func _on_settings_pressed() -> void:

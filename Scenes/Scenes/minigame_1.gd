@@ -14,7 +14,7 @@ func _ready() -> void:
 		# tell the script to wait for a signal, or for when a function finshes
 
 
-	await themed_timer.Timer(10.0) #accessing a function from this node
+	await themed_timer.Timer(7.0) #accessing a function from this node
 	#after this is compeleted...
 	timer_end = true # now we're saying "oh ye you ran out of time"
 
@@ -24,12 +24,12 @@ func _process(_delta: float) -> void: # running every frame brochacho
 		if Global.minigames_done > 3: # we access a global script and see how many minigames have been compeleted
 			get_tree().change_scene_to_file("res://scenes/done_screen.tscn") # change current play scene into another, but you make your own finish screen in a later challenge, dont worry abt this rn
 		else:
-			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn") # go back to the intermission scene
+			get_tree().change_scene_to_file("res://Scenes/Scenes/timer_screen.tscn") # go back to the intermission scene
 	
 	if timer_end: # if the timer does end...
 		Global.minigames_done -=1 #go back a minigame
 		Global.lives -= 1 # lose ur lives
-		get_tree().change_scene_to_file("res://scenes/timer_screen.tscn") # back to intermission
+		get_tree().change_scene_to_file("res://Scenes/Scenes/timer_screen.tscn") # back to intermission
 		
 
 func garlic_collect() -> void: # cool function that you connect to those garlics
