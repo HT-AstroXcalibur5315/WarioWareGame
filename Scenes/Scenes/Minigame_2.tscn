@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cw2gl7cy6smkb"]
 
 [ext_resource type="Texture2D" uid="uid://cvn03i15b35ke" path="res://51WwLPnC+RL._AC_UF894,1000_QL80_.jpg" id="1_8j61c"]
-[ext_resource type="Script" uid="uid://bvp3l76lpvq4i" path="res://Scenes/Scenes/minigame_2.gd" id="1_yj4rb"]
+[ext_resource type="Script" uid="uid://dichlujtpfgi0" path="res://Scenes/Scenes/minigame_2.gd" id="1_yj4rb"]
 [ext_resource type="Texture2D" uid="uid://bpqhd57r2feql" path="res://UFO-removebg-preview.png" id="2_hg16a"]
-[ext_resource type="Script" uid="uid://dbb70pvdhygm" path="res://Scenes/Scenes/button_1.gd" id="3_yj4rb"]
+[ext_resource type="Script" uid="uid://bswao4uv5a7k5" path="res://Scenes/Scenes/button_1.gd" id="3_yj4rb"]
 [ext_resource type="PackedScene" uid="uid://mjtqolmd6ipi" path="res://Scenes/Scenes/themed_timer.tscn" id="4_hg16a"]
 
 [node name="Minigame_2" type="Node2D" unique_id=162442068]
@@ -17,17 +17,17 @@ offset_bottom = 611.0
 texture = ExtResource("1_8j61c")
 
 [node name="Button_1" type="TextureButton" parent="." unique_id=220205765]
-offset_left = -15.0
-offset_top = 22.0
-offset_right = 385.0
-offset_bottom = 422.0
+offset_left = 2.0
+offset_top = 98.0
+offset_right = 402.0
+offset_bottom = 498.0
 texture_normal = ExtResource("2_hg16a")
 script = ExtResource("3_yj4rb")
 
 [node name="Button_2" type="TextureButton" parent="." unique_id=1218127473]
-offset_left = 268.0
+offset_left = 317.0
 offset_top = 271.0
-offset_right = 668.0
+offset_right = 717.0
 offset_bottom = 671.0
 texture_normal = ExtResource("2_hg16a")
 script = ExtResource("3_yj4rb")
@@ -57,4 +57,10 @@ texture_normal = ExtResource("2_hg16a")
 script = ExtResource("3_yj4rb")
 
 [node name="ThemedTimer" parent="." unique_id=142063373 instance=ExtResource("4_hg16a")]
-position = Vector2(71, 415)
+position = Vector2(14, 12)
+
+[connection signal="pressed" from="Button_1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button_2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button_3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button_4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button_5" to="." method="_on_button_5_pressed"]

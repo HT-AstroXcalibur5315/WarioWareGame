@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cg3q65qljhtix"]
 
 [ext_resource type="Texture2D" uid="uid://cvn03i15b35ke" path="res://51WwLPnC+RL._AC_UF894,1000_QL80_.jpg" id="1_ayaqk"]
-[ext_resource type="Script" path="res://Scenes/Scenes/minigame_1.gd" id="1_snjq1"]
+[ext_resource type="Script" uid="uid://jr2q2snwtgt7" path="res://Scenes/Scenes/minigame_1.gd" id="1_snjq1"]
 [ext_resource type="PackedScene" uid="uid://cy5ugr0e71vr2" path="res://Scenes/Scenes/player.tscn" id="2_07qpp"]
 [ext_resource type="Texture2D" uid="uid://do0yjnc1v4qb5" path="res://Screenshot_2026-08-20_at_9.20.38_PM-removebg-preview.png" id="3_07qpp"]
-[ext_resource type="Script" path="res://Scenes/Scenes/garlic.gd" id="4_hwh2y"]
-[ext_resource type="Script" path="res://Scenes/Scenes/garlic_2.gd" id="6_flgr0"]
-[ext_resource type="Script" path="res://Scenes/Scenes/garlic_3.gd" id="7_wmap5"]
+[ext_resource type="Script" uid="uid://c4cplptd7uadw" path="res://Scenes/Scenes/garlic.gd" id="4_hwh2y"]
+[ext_resource type="Script" uid="uid://dh5f0nyaparmk" path="res://Scenes/Scenes/garlic_2.gd" id="6_flgr0"]
+[ext_resource type="Script" uid="uid://cqx6ymmn4vfot" path="res://Scenes/Scenes/garlic_3.gd" id="7_wmap5"]
 [ext_resource type="PackedScene" uid="uid://mjtqolmd6ipi" path="res://Scenes/Scenes/themed_timer.tscn" id="8_hwh2y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j2w3y"]
@@ -60,7 +60,7 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_j2w3y"]
 radius = 49.0408
 
-[node name="minigame_1" type="Node2D" unique_id=1830350531]
+[node name="Minigame_1" type="Node2D" unique_id=1830350531]
 script = ExtResource("1_snjq1")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1171653807]
@@ -195,3 +195,7 @@ shape = SubResource("CircleShape2D_j2w3y")
 
 [node name="ThemedTimer" parent="." unique_id=142063373 instance=ExtResource("8_hwh2y")]
 position = Vector2(1061, 1)
+
+[connection signal="garlic_collected" from="Garlic" to="." method="_on_garlic_garlic_collected"]
+[connection signal="garlic_collected" from="Garlic2" to="." method="_on_garlic_2_garlic_collected"]
+[connection signal="garlic_collected" from="Garlic3" to="." method="_on_garlic_3_garlic_collected"]
