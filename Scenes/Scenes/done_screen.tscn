@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dv83o8euoy1hi"]
+
+[ext_resource type="Texture2D" uid="uid://ctshu2alcxmrj" path="res://Screenshot_2026-08-24_at_10.10.33_AM-removebg-preview.png.import.jpg" id="1_sj33q"]
+[ext_resource type="Script" uid="uid://r72jrri0b120" path="res://Scenes/Scenes/done_screen.gd" id="1_y31t4"]
+[ext_resource type="Texture2D" uid="uid://dr1ta1qv0lq6w" path="res://Screenshot_2026-08-24_at_10.10.33_AM-removebg-preview.png" id="2_y31t4"]
+[ext_resource type="FontFile" uid="uid://bc5ta2k8sl0x6" path="res://MonasDemoRegular-eZl86.ttf" id="3_0rq4v"]
+
+[node name="DoneScreen" type="Node2D" unique_id=398762226]
+script = ExtResource("1_y31t4")
+
+[node name="Background" type="TextureRect" parent="." unique_id=2034265330]
+offset_right = 1179.2949
+offset_bottom = 786.0
+texture = ExtResource("1_sj33q")
+expand_mode = 1
+
+[node name="Monkey" type="TextureRect" parent="." unique_id=2049819579]
+offset_left = 546.0
+offset_top = -9.0
+offset_right = 1205.0
+offset_bottom = 670.05646
+texture = ExtResource("2_y31t4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1509442458]
+offset_left = 132.0
+offset_top = 305.0
+offset_right = 569.0
+offset_bottom = 474.0
+theme_override_constants/separation = 5
+alignment = 1
+
+[node name="Menu" type="Button" parent="VBoxContainer" unique_id=1465795737]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.92156863, 0.99607843, 0.99215686, 1)
+theme_override_colors/font_outline_color = Color(0.09019608, 0.12156863, 0.35686275, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 30
+text = "Menu"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1777812383]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.92156863, 0.99607843, 0.99215686, 1)
+theme_override_colors/font_outline_color = Color(0.09019608, 0.12156863, 0.35686275, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[node name="You win!" type="RichTextLabel" parent="." unique_id=971562323]
+offset_left = 146.0
+offset_top = 156.0
+offset_right = 580.0
+offset_bottom = 308.0
+theme_override_colors/default_color = Color(0.8666667, 0.9372549, 0.9529412, 1)
+theme_override_colors/font_outline_color = Color(0.07032133, 0.07688225, 0.32828394, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/normal_font = ExtResource("3_0rq4v")
+theme_override_font_sizes/normal_font_size = 131
+text = "You Win!"
+
+[connection signal="pressed" from="VBoxContainer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

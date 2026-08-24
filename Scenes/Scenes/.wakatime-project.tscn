@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c8cxv8jcqycxh"]
+
+[sub_resource type="GDScript" id="GDScript_bf0hr"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="WarioWareGame" type="Node2D" unique_id=176333783]
+script = SubResource("GDScript_bf0hr")

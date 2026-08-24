@@ -14,10 +14,10 @@ texture = ExtResource("2_bdgx7")
 
 [node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=1800254368]
 unique_name_in_owner = true
-offset_left = 45.0
-offset_top = 132.0
-offset_right = 1119.0
-offset_bottom = 331.0
+offset_left = 246.0
+offset_top = 114.0
+offset_right = 882.0
+offset_bottom = 313.0
 theme_override_constants/separation = 11
 
 [node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=885914178]
@@ -34,16 +34,6 @@ expand_mode = 3
 layout_mode = 2
 texture = ExtResource("3_cxesx")
 expand_mode = 3
-
-[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=1077445916]
-layout_mode = 2
-texture = ExtResource("3_cxesx")
-expand_mode = 2
-
-[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=205267292]
-layout_mode = 2
-texture = ExtResource("3_cxesx")
-expand_mode = 2
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=1846859856]
 offset_left = 430.0
