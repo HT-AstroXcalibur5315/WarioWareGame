@@ -41,8 +41,4 @@ Simply click [here] (https://ht-astroxcalibur5315.itch.io/star-chase), press "ru
 - [The Stardance guide to making my first WarioWareGame] (https://stardance.hackclub.com/missions/wario-ware/guide)
 - [Troubleshooting help] (https://stardance.hackclub.com/@Shreyansh)
 =======
-### A short, 2 game compilation of simple yet challenging minigames.
-![Screenshot of the title screen of my game, Star Chase. It features the title, a monkey mascot, and the buttons for starting the game, quitting and accessing the settings.](image-1.png)
 
-**https://ht-astroxcalibur5315.itch.io/star-chase**
->>>>>>> 9ece3e0d013c5a4ee85ef00b484b3270d3985362
