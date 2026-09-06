@@ -39,5 +39,8 @@ Simply click [here](https://ht-astroxcalibur5315.itch.io/star-chase), press "run
 - [AmateurWare](https://github.com/amateurtechguy/AmateurWare/blob/main/README.md?plain=1)
 - [The Stardance guide to making my first WarioWareGame](https://stardance.hackclub.com/missions/wario-ware/guide)
 - [Troubleshooting help](https://stardance.hackclub.com/@Shreyansh)  
-=======
+
+#### I hope you enjoy the game and good luck!  
+                                           - HT
+
 
