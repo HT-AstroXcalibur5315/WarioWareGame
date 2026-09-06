@@ -1,3 +1,70 @@
 [gd_scene format=3 uid="uid://bxlo3li5arwon"]
 
+[ext_resource type="Script" uid="uid://0nhu74n1yg4j" path="res://Scenes/Scenes/settings_scene.gd" id="1_qkoix"]
+[ext_resource type="Texture2D" uid="uid://b6l21aksutx5w" path="res://Screenshot 2026-08-16 at 3.56.53 PM.png" id="2_prvkw"]
+[ext_resource type="FontFile" uid="uid://bc5ta2k8sl0x6" path="res://MonasDemoRegular-eZl86.ttf" id="3_s65is"]
+[ext_resource type="Texture2D" uid="uid://dfgrxhogaqsbj" path="res://Screenshot_2026-08-26_at_10.56.58_AM-removebg-preview__1_-removebg-preview (1).png" id="4_j2sdg"]
+[ext_resource type="FontFile" uid="uid://nbrtla12ybhr" path="res://HollyBerryPop-LVxvE.ttf" id="5_prvkw"]
+
 [node name="SettingsScreen" type="Node2D" unique_id=2075825095]
+script = ExtResource("1_qkoix")
+
+[node name="Background" type="TextureRect" parent="." unique_id=629230352]
+offset_left = -4.0
+offset_top = -5.0
+offset_right = 1159.0
+offset_bottom = 699.0
+texture = ExtResource("2_prvkw")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box outline" type="ColorRect" parent="." unique_id=1183196403]
+offset_left = 99.0
+offset_top = 52.0
+offset_right = 1055.0
+offset_bottom = 594.0
+color = Color(0, 0, 0, 1)
+
+[node name="Box" type="ColorRect" parent="." unique_id=365945857]
+offset_left = 110.0
+offset_top = 66.0
+offset_right = 1044.0
+offset_bottom = 582.0
+color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+
+[node name="Settings" type="RichTextLabel" parent="." unique_id=1445960552]
+offset_left = 392.0
+offset_top = 87.0
+offset_right = 756.0
+offset_bottom = 213.0
+theme_override_fonts/normal_font = ExtResource("3_s65is")
+theme_override_font_sizes/normal_font_size = 111
+text = "Settings"
+
+[node name="Settings Logo" type="TextureRect" parent="." unique_id=1623478999]
+offset_left = 880.0
+offset_top = 67.0
+offset_right = 1044.6667
+offset_bottom = 210.0
+texture = ExtResource("4_j2sdg")
+expand_mode = 1
+
+[node name="Back to Menu" type="Button" parent="." unique_id=1463887381]
+offset_left = 709.0
+offset_top = 513.0
+offset_right = 1031.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0.92156863, 0.99607843, 0.99215686, 1)
+theme_override_font_sizes/font_size = 30
+text = "Exit
+"
+
+[node name="Coming Soon" type="RichTextLabel" parent="." unique_id=1622316480]
+offset_left = 313.0
+offset_top = 298.0
+offset_right = 839.0
+offset_bottom = 378.0
+theme_override_fonts/normal_font = ExtResource("5_prvkw")
+theme_override_font_sizes/normal_font_size = 77
+text = "Coming Soon"
+
+[connection signal="pressed" from="Back to Menu" to="." method="_on_back_to_menu_pressed"]
