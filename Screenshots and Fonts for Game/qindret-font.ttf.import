@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bc5ta2k8sl0x6"
-path="res://.godot/imported/MonasDemoRegular-eZl86.ttf-081871f417c00535ef651c24ca94ea44.fontdata"
+uid="uid://b3yt3oayqjaa0"
+path="res://.godot/imported/qindret-font.ttf-7260ef138d705e383350f9d21f7575fc.fontdata"
 
 [deps]
 
-source_file="res://MonasDemoRegular-eZl86.ttf"
-dest_files=["res://.godot/imported/MonasDemoRegular-eZl86.ttf-081871f417c00535ef651c24ca94ea44.fontdata"]
+source_file="res://Screenshots and Fonts for Game/qindret-font.ttf"
+dest_files=["res://.godot/imported/qindret-font.ttf-7260ef138d705e383350f9d21f7575fc.fontdata"]
 
 [params]
 

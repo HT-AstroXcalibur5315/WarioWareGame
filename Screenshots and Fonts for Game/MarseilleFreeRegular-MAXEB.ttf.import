@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b3yt3oayqjaa0"
-path="res://.godot/imported/qindret-font.ttf-faac7f534f22bdd7680b52cba209a243.fontdata"
+uid="uid://bx12y7ios6lgj"
+path="res://.godot/imported/MarseilleFreeRegular-MAXEB.ttf-51cbe94333659a3b1dc054f2e531bdf1.fontdata"
 
 [deps]
 
-source_file="res://qindret-font.ttf"
-dest_files=["res://.godot/imported/qindret-font.ttf-faac7f534f22bdd7680b52cba209a243.fontdata"]
+source_file="res://Screenshots and Fonts for Game/MarseilleFreeRegular-MAXEB.ttf"
+dest_files=["res://.godot/imported/MarseilleFreeRegular-MAXEB.ttf-51cbe94333659a3b1dc054f2e531bdf1.fontdata"]
 
 [params]
 

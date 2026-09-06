@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bfhpphr73e1n8"]
 
-[ext_resource type="Texture2D" uid="uid://dgq225j1fskda" path="res://Screenshot 2026-09-06 at 10.48.23 AM.png" id="1_h5afm"]
-[ext_resource type="Texture2D" uid="uid://bpqhd57r2feql" path="res://UFO-removebg-preview.png" id="2_yyy0a"]
+[ext_resource type="Texture2D" uid="uid://dgq225j1fskda" path="res://Screenshots and Fonts for Game/Screenshot 2026-09-06 at 10.48.23 AM.png" id="1_h5afm"]
+[ext_resource type="Texture2D" uid="uid://bpqhd57r2feql" path="res://Screenshots and Fonts for Game/UFO-removebg-preview.png" id="2_yyy0a"]
 [ext_resource type="PackedScene" uid="uid://cppim1gpehye7" path="res://Scenes/Scenes/player_2.tscn" id="3_h5afm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5j1ii"]

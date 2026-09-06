@@ -41,5 +41,3 @@ Simply click [here](https://ht-astroxcalibur5315.itch.io/star-chase), press "run
 - [Troubleshooting help](https://stardance.hackclub.com/@Shreyansh)  
 
 #### I hope you enjoy the game and good luck!  - HT
-
-

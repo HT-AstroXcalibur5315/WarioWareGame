@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4n4clsnf3gyi"
-path="res://.godot/imported/Screenshot_2026-08-17_at_4.00.53_PM-removebg-preview.png-78f9dc1ed37cc4b1f42ad4b9fce854ea.ctex"
+uid="uid://bpqhd57r2feql"
+path="res://.godot/imported/UFO-removebg-preview.png-edb8f0055fe932f8fcd89fe7d9ec0846.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screenshot_2026-08-17_at_4.00.53_PM-removebg-preview.png"
-dest_files=["res://.godot/imported/Screenshot_2026-08-17_at_4.00.53_PM-removebg-preview.png-78f9dc1ed37cc4b1f42ad4b9fce854ea.ctex"]
+source_file="res://Screenshots and Fonts for Game/UFO-removebg-preview.png"
+dest_files=["res://.godot/imported/UFO-removebg-preview.png-edb8f0055fe932f8fcd89fe7d9ec0846.ctex"]
 
 [params]
 

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bx12y7ios6lgj"
-path="res://.godot/imported/MarseilleFreeRegular-MAXEB.ttf-3d21e89713d2c6f4ea1a86c4f3ee5158.fontdata"
+uid="uid://c3ktkadk3ankd"
+path="res://.godot/imported/HelloChristmas-1Ge70.ttf-7bbbc14e0485f24406da63a7e69af15d.fontdata"
 
 [deps]
 
-source_file="res://MarseilleFreeRegular-MAXEB.ttf"
-dest_files=["res://.godot/imported/MarseilleFreeRegular-MAXEB.ttf-3d21e89713d2c6f4ea1a86c4f3ee5158.fontdata"]
+source_file="res://Screenshots and Fonts for Game/HelloChristmas-1Ge70.ttf"
+dest_files=["res://.godot/imported/HelloChristmas-1Ge70.ttf-7bbbc14e0485f24406da63a7e69af15d.fontdata"]
 
 [params]
 

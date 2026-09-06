@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c3ktkadk3ankd"
-path="res://.godot/imported/HelloChristmas-1Ge70.ttf-62511090f819823814e3ebd31588e740.fontdata"
+uid="uid://bc5ta2k8sl0x6"
+path="res://.godot/imported/MonasDemoRegular-eZl86.ttf-51c0cbf713a8d1bf4c31d2b6f51f2cdd.fontdata"
 
 [deps]
 
-source_file="res://HelloChristmas-1Ge70.ttf"
-dest_files=["res://.godot/imported/HelloChristmas-1Ge70.ttf-62511090f819823814e3ebd31588e740.fontdata"]
+source_file="res://Screenshots and Fonts for Game/MonasDemoRegular-eZl86.ttf"
+dest_files=["res://.godot/imported/MonasDemoRegular-eZl86.ttf-51c0cbf713a8d1bf4c31d2b6f51f2cdd.fontdata"]
 
 [params]
 
