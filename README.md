@@ -40,7 +40,6 @@ Simply click [here](https://ht-astroxcalibur5315.itch.io/star-chase), press "run
 - [The Stardance guide to making my first WarioWareGame](https://stardance.hackclub.com/missions/wario-ware/guide)
 - [Troubleshooting help](https://stardance.hackclub.com/@Shreyansh)  
 
-#### I hope you enjoy the game and good luck!  
-                                           - HT
+#### I hope you enjoy the game and good luck!  - HT
 
 
