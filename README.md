@@ -1,7 +1,6 @@
 # **Star Chase**
-<<<<<<< HEAD
 
-A short, 2 game compilation of simple yet challenging minigames.
+### A short, 2 game compilation of simple yet challenging minigames.
 ![Screenshot of the title screen of my game, Star Chase. It features the title, a monkey mascot, and the buttons for starting the game, quitting and accessing the settings.](image-1.png)
 
 ## >> Minigame 1:
@@ -21,7 +20,7 @@ This next mingame is a clicker. You have 3 seconds to find all five UFOs and cli
 
 ## How to play?
 
-Simply click [here] (https://ht-astroxcalibur5315.itch.io/star-chase), press "run game," wait for the game to load and play!
+Simply click [here](https://ht-astroxcalibur5315.itch.io/star-chase), press "run game," wait for the game to load and play!
 
 
 
@@ -36,9 +35,9 @@ Simply click [here] (https://ht-astroxcalibur5315.itch.io/star-chase), press "ru
 - Monkeys
 
 ## Credits:
-- [Stardance Resources] (https://stardance.hackclub.com/resources/great_readme)
-- [AmateurWare] (https://github.com/amateurtechguy/AmateurWare/blob/main/README.md?plain=1)
-- [The Stardance guide to making my first WarioWareGame] (https://stardance.hackclub.com/missions/wario-ware/guide)
-- [Troubleshooting help] (https://stardance.hackclub.com/@Shreyansh)
+- [Stardance Resources](https://stardance.hackclub.com/resources/great_readme)
+- [AmateurWare](https://github.com/amateurtechguy/AmateurWare/blob/main/README.md?plain=1)
+- [The Stardance guide to making my first WarioWareGame](https://stardance.hackclub.com/missions/wario-ware/guide)
+- [Troubleshooting help](https://stardance.hackclub.com/@Shreyansh)
 =======
 
