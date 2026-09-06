@@ -13,7 +13,10 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if buttons_pressed == 5:
-		get_tree().change_scene_to_file("res://Scenes/Scenes/done_screen.tscn")
+		if Global.minigames_done > 2: # we access a global script and see how many minigames have been compeleted
+			get_tree().change_scene_to_file("res://Scenes/Scenes/death_screen.tscn") # change current play scene into another, but you make your own finish screen in a later challenge, dont worry abt this rn
+		else:
+			get_tree().change_scene_to_file("res://Scenes/Scenes/timer_screen.tscn") # go back to the intermission scene
 		
 	
 	if timer_end:

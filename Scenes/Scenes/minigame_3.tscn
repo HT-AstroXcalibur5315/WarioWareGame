@@ -1,3 +1,235 @@
 [gd_scene format=3 uid="uid://bfhpphr73e1n8"]
 
+[ext_resource type="Texture2D" uid="uid://dgq225j1fskda" path="res://Screenshot 2026-09-06 at 10.48.23 AM.png" id="1_h5afm"]
+[ext_resource type="Texture2D" uid="uid://bpqhd57r2feql" path="res://UFO-removebg-preview.png" id="2_yyy0a"]
+[ext_resource type="PackedScene" uid="uid://cppim1gpehye7" path="res://Scenes/Scenes/player_2.tscn" id="3_h5afm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5j1ii"]
+size = Vector2(1172, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2w3y"]
+size = Vector2(121, 57)
+
 [node name="Minigame_3" type="Node2D" unique_id=1528152037]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=241600549]
+position = Vector2(-4, 632)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=1258176617]
+offset_right = 1161.0
+offset_bottom = 24.0
+color = Color(0.10980392, 0.13333334, 0.28627452, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=38929068]
+position = Vector2(576, 13.5)
+shape = SubResource("RectangleShape2D_5j1ii")
+
+[node name="Background" type="TextureRect" parent="." unique_id=174934177]
+offset_left = -11.0
+offset_top = -16.0
+offset_right = 1168.1095
+offset_bottom = 972.0
+texture = ExtResource("1_h5afm")
+flip_h = true
+flip_v = true
+
+[node name="UFO1" type="Node2D" parent="." unique_id=351864751]
+position = Vector2(84, -50)
+
+[node name="UFO" type="TextureRect" parent="UFO1" unique_id=614889256]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO1" unique_id=1968081928]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO1/Area2D" unique_id=196942927]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO2" type="Node2D" parent="." unique_id=42253948]
+position = Vector2(339, -50)
+
+[node name="UFO" type="TextureRect" parent="UFO2" unique_id=856725194]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO2" unique_id=1499658500]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO2/Area2D" unique_id=1567477234]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO3" type="Node2D" parent="." unique_id=853860826]
+position = Vector2(594, -50)
+
+[node name="UFO" type="TextureRect" parent="UFO3" unique_id=392070107]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO3" unique_id=1495396974]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO3/Area2D" unique_id=1471655501]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO4" type="Node2D" parent="." unique_id=370466815]
+position = Vector2(849, -50)
+
+[node name="UFO" type="TextureRect" parent="UFO4" unique_id=707556723]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO4" unique_id=2059321832]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO4/Area2D" unique_id=57413201]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO5" type="Node2D" parent="." unique_id=1533955518]
+position = Vector2(211, 35)
+
+[node name="UFO" type="TextureRect" parent="UFO5" unique_id=1434761090]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO5" unique_id=1887652505]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO5/Area2D" unique_id=1728723734]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO6" type="Node2D" parent="." unique_id=641971513]
+position = Vector2(466, 35)
+
+[node name="UFO" type="TextureRect" parent="UFO6" unique_id=1788214724]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO6" unique_id=512044669]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO6/Area2D" unique_id=2022511168]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO7" type="Node2D" parent="." unique_id=808887509]
+position = Vector2(721, 35)
+
+[node name="UFO" type="TextureRect" parent="UFO7" unique_id=550207826]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO7" unique_id=2014225125]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO7/Area2D" unique_id=1986798935]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO8" type="Node2D" parent="." unique_id=1052335215]
+position = Vector2(84, 120)
+
+[node name="UFO" type="TextureRect" parent="UFO8" unique_id=2020837152]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO8" unique_id=25297434]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO8/Area2D" unique_id=2025243578]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO9" type="Node2D" parent="." unique_id=971820882]
+position = Vector2(339, 120)
+
+[node name="UFO" type="TextureRect" parent="UFO9" unique_id=375010661]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO9" unique_id=287485150]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO9/Area2D" unique_id=299687004]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO10" type="Node2D" parent="." unique_id=420512335]
+position = Vector2(594, 120)
+
+[node name="UFO" type="TextureRect" parent="UFO10" unique_id=1201285213]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO10" unique_id=1395744603]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO10/Area2D" unique_id=17793995]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="UFO11" type="Node2D" parent="." unique_id=920586592]
+position = Vector2(849, 120)
+
+[node name="UFO" type="TextureRect" parent="UFO11" unique_id=1736559498]
+offset_left = 38.0
+offset_top = 84.0
+offset_right = 181.0
+offset_bottom = 227.0
+texture = ExtResource("2_yyy0a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="UFO11" unique_id=1034389529]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UFO11/Area2D" unique_id=389521839]
+position = Vector2(109.5, 155.5)
+shape = SubResource("RectangleShape2D_j2w3y")
+
+[node name="Player2" parent="." unique_id=1782395231 instance=ExtResource("3_h5afm")]
