@@ -20,7 +20,7 @@ This next mingame is a clicker. You have 3 seconds to find all five UFOs and cli
 
 ## How to play?
 
-Simply click [here](https://ht-astroxcalibur5315.itch.io/star-chase), press "run game," wait for the game to load and play!
+Simply press [here](https://ht-astroxcalibur5315.itch.io/star-chase), then "run game," wait for the game to load, and play!
 
 
 
