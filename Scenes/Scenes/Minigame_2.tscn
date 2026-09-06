@@ -12,15 +12,15 @@ script = ExtResource("1_tqjmu")
 [node name="Background" type="TextureRect" parent="." unique_id=1321730411]
 offset_left = -68.70862
 offset_top = -11.0
-offset_right = 1158.8146
-offset_bottom = 611.0
+offset_right = 1241.7019
+offset_bottom = 653.0
 texture = ExtResource("2_aj3g8")
 
 [node name="Button_1" type="TextureButton" parent="." unique_id=220205765]
-offset_left = 144.0
-offset_top = 241.0
-offset_right = 288.0
-offset_bottom = 385.0
+offset_left = 219.0
+offset_top = 305.0
+offset_right = 309.0
+offset_bottom = 395.0
 texture_normal = ExtResource("3_u2mfx")
 ignore_texture_size = true
 stretch_mode = 0
@@ -37,30 +37,30 @@ stretch_mode = 0
 script = ExtResource("4_defgf")
 
 [node name="Button_3" type="TextureButton" parent="." unique_id=457059917]
-offset_left = 1015.0
-offset_top = 298.0
-offset_right = 1148.0
-offset_bottom = 431.0
+offset_left = 1089.0
+offset_top = 339.0
+offset_right = 1222.0
+offset_bottom = 472.0
 texture_normal = ExtResource("3_u2mfx")
 ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("4_defgf")
 
 [node name="Button_4" type="TextureButton" parent="." unique_id=2055653027]
-offset_left = -1.0
-offset_top = 404.0
-offset_right = 19.0
-offset_bottom = 425.0
+offset_left = 2.0
+offset_top = 433.0
+offset_right = 22.0
+offset_bottom = 454.0
 texture_normal = ExtResource("3_u2mfx")
 ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("4_defgf")
 
 [node name="Button_5" type="TextureButton" parent="." unique_id=778448819]
-offset_left = 980.0
-offset_top = 33.0
-offset_right = 1065.0
-offset_bottom = 118.0
+offset_left = 1024.0
+offset_top = 14.0
+offset_right = 1109.0
+offset_bottom = 99.0
 texture_normal = ExtResource("3_u2mfx")
 ignore_texture_size = true
 stretch_mode = 0

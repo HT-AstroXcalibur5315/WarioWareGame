@@ -16,10 +16,10 @@ offset_bottom = 699.0
 texture = ExtResource("1_tk6ir")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1304178514]
-offset_left = 399.0
-offset_top = 304.0
-offset_right = 758.0
-offset_bottom = 495.0
+offset_left = 405.0
+offset_top = 296.0
+offset_right = 764.0
+offset_bottom = 487.0
 alignment = 1
 
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=2125136064]
@@ -49,10 +49,10 @@ text = "Quit"
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=1006030415]
 clip_contents = false
-offset_left = 299.0
-offset_top = 165.0
-offset_right = 942.0
-offset_bottom = 337.0
+offset_left = 305.0
+offset_top = 157.0
+offset_right = 948.0
+offset_bottom = 329.0
 theme_override_colors/default_color = Color(0.92156863, 0.99607843, 0.99215686, 1)
 theme_override_colors/font_outline_color = Color(0.09019608, 0.12156863, 0.35686275, 1)
 theme_override_constants/outline_size = 40
@@ -62,9 +62,9 @@ text = "Star Chase
 "
 
 [node name="Monkey" type="TextureRect" parent="." unique_id=1048722593]
-offset_left = -63.0
+offset_left = -86.0
 offset_top = 108.0
-offset_right = 516.0
+offset_right = 493.0
 offset_bottom = 687.0
 texture = ExtResource("3_kg7io")
 flip_h = true
