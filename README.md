@@ -29,7 +29,7 @@ Simply click [here](https://ht-astroxcalibur5315.itch.io/star-chase), press "run
 - Two distinct minigames
 - Challenging but achievable
 - Special win and lose screens
-![Win screen layout](image-4.png)
+![Win screen layout](image-7.png)
 ![Lose screen layout](image-6.png)
 - Space themed
 - Monkeys
