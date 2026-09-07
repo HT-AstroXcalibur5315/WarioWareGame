@@ -20,7 +20,7 @@ This next mingame is a clicker. You have 3 seconds to find all five UFOs and cli
 
 ## How to play?
 
-Simply click [here](https://ht-astroxcalibur5315.itch.io/star-chase), press "run game," wait for the game to load and play!
+Simply press [here](https://ht-astroxcalibur5315.itch.io/star-chase), then "run game," wait for the game to load, and play!
 
 
 
@@ -35,9 +35,9 @@ Simply click [here](https://ht-astroxcalibur5315.itch.io/star-chase), press "run
 - Monkeys
 
 ## Credits:
+- [The Stardance guide to making my first WarioWareGame](https://stardance.hackclub.com/missions/wario-ware/guide)
 - [Stardance Resources](https://stardance.hackclub.com/resources/great_readme)
 - [AmateurWare](https://github.com/amateurtechguy/AmateurWare/blob/main/README.md?plain=1)
-- [The Stardance guide to making my first WarioWareGame](https://stardance.hackclub.com/missions/wario-ware/guide)
 - [Troubleshooting help](https://stardance.hackclub.com/@Shreyansh)  
 
 #### I hope you enjoy the game and good luck!  - HT
