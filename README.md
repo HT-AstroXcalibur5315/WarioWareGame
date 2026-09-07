@@ -15,7 +15,7 @@ Use the arrow keys to move left and right, and the space bar to jump.
 
 ## >> Minigame 2:
 
-This next minigame is a clicker. You have 3 seconds to find all five UFOs and click them to move on to the next level.
+This next minigame is a clicker. To move on, find all five UFOs and click them before time runs out.
 
 ![Second Minigame layout screen](image-3.png)
 
