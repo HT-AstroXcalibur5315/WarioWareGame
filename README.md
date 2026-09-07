@@ -6,7 +6,7 @@
 
 ## >> Minigame 1:
 
-This is a platformer minigame where you have 7 seconds to collect all 3 energy lightining bolts. 
+The first minigame is a platformer minigame where you have 7 seconds to collect all 3 energy lightining bolts. 
 
 Use the arrow keys to move left and right, and the space bar to jump.
 
@@ -15,18 +15,18 @@ Use the arrow keys to move left and right, and the space bar to jump.
 
 ## >> Minigame 2:
 
-This next minigame is a clicker. To move on, find all five UFOs and click them before time runs out.
+Up next is a clicker. To move on, find all five UFOs and click them before time runs out.
 
 ![Second Minigame layout screen](image-3.png)
 
 
 ## >> Minigame 3:
 
-This last one was inspired by a game I once coded on Scratch, Space Invaders. 
+Finally, this last one was inspired by a game I once coded on Scratch, Space Invaders. 
 
-To play, use the arrow keys to move left and right and the space bar to shoot. Shoot down 7 invaders before the timer ends and win!
+To play, use the arrow keys to move left and right and the space bar to shoot. Take down 7 invaders before the timer ends to win!
 
-! [Screenshot of third Minigame] (image-8.png)
+![Screenshot of third Minigame](image-8.png)
 
 
 ## How to play?
@@ -51,6 +51,6 @@ Simply press [here](https://ht-astroxcalibur5315.itch.io/star-chase), then "run 
 - [The Stardance guide](https://stardance.hackclub.com/missions/wario-ware/guide)
 - [Stardance Resources](https://stardance.hackclub.com/resources/great_readme)
 - [AmateurWare](https://github.com/amateurtechguy/AmateurWare/blob/main/README.md?plain=1)
-- [@Shreyansh (Time-tracking Help)](https://stardance.hackclub.com/@Shreyansh)  
+- [@Shreyansh (for all the help with my time-tracking issues)](https://stardance.hackclub.com/@Shreyansh)  
 
 #### I hope you enjoy the game and good luck!  - HT
