@@ -1,7 +1,8 @@
 # **Star Chase**
 
-### A short, 2 game compilation of simple yet challenging minigames.
+### A short, 3 game compilation of simple yet challenging minigames.
 ![Screenshot of the title screen of my game, Star Chase. It features the title, a monkey mascot, and the buttons for starting the game, quitting and accessing the settings.](image-1.png)
+
 
 ## >> Minigame 1:
 
@@ -11,11 +12,21 @@ Use the arrow keys to move left and right, and the space bar to jump.
 
 ![First minigame layout screenshot](image-2.png)
 
+
 ## >> Minigame 2:
 
-This next mingame is a clicker. You have 3 seconds to find all five UFOs and click them to win the game.
+This next minigame is a clicker. You have 3 seconds to find all five UFOs and click them to move on to the next level.
 
 ![Second Minigame layout screen](image-3.png)
+
+
+## >> Minigame 3:
+
+This last one was inspired by a game I once coded on Scratch, Space Invaders. 
+
+To play, use the arrow keys to move left and right and the space bar to shoot. Shoot down 7 invaders before the timer ends and win!
+
+! [Screenshot of third Minigame] (image-8.png)
 
 
 ## How to play?
@@ -26,18 +37,20 @@ Simply press [here](https://ht-astroxcalibur5315.itch.io/star-chase), then "run 
 
 ## Features:
 
-- Two distinct minigames
-- Challenging but achievable
+- Three distinct minigames
+- All games challenging but achievable
 - Special win and lose screens
 ![Win screen layout](image-7.png)
 ![Lose screen layout](image-6.png)
+- Custom Animations
 - Space themed
 - Monkeys
 
 ## Credits:
-- [The Stardance guide to making my first WarioWareGame](https://stardance.hackclub.com/missions/wario-ware/guide)
+- [README Formatting Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [The Stardance guide](https://stardance.hackclub.com/missions/wario-ware/guide)
 - [Stardance Resources](https://stardance.hackclub.com/resources/great_readme)
 - [AmateurWare](https://github.com/amateurtechguy/AmateurWare/blob/main/README.md?plain=1)
-- [Troubleshooting help](https://stardance.hackclub.com/@Shreyansh)  
+- [@Shreyansh (Time-tracking Help)](https://stardance.hackclub.com/@Shreyansh)  
 
 #### I hope you enjoy the game and good luck!  - HT

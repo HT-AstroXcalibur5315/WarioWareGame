@@ -1,16 +1,713 @@
 [gd_scene format=3 uid="uid://bfhpphr73e1n8"]
 
+[ext_resource type="Script" uid="uid://bkufk2ck1jr85" path="res://Scenes/Scenes/minigame_3.gd" id="1_32gti"]
 [ext_resource type="Texture2D" uid="uid://dgq225j1fskda" path="res://Screenshots and Fonts for Game/Screenshot 2026-09-06 at 10.48.23 AM.png" id="1_h5afm"]
+[ext_resource type="Script" uid="uid://byl8gphpawxtf" path="res://Scenes/Scenes/ufo_1.gd" id="2_tiqo1"]
 [ext_resource type="Texture2D" uid="uid://bpqhd57r2feql" path="res://Screenshots and Fonts for Game/UFO-removebg-preview.png" id="2_yyy0a"]
 [ext_resource type="PackedScene" uid="uid://cppim1gpehye7" path="res://Scenes/Scenes/player_2.tscn" id="3_h5afm"]
+[ext_resource type="PackedScene" uid="uid://mjtqolmd6ipi" path="res://Scenes/Scenes/themed_timer.tscn" id="4_s70ru"]
+[ext_resource type="Script" uid="uid://1wqnx6xxx07f" path="res://Scenes/Scenes/ufo_2.gd" id="5_ykq8t"]
+[ext_resource type="Script" uid="uid://drpjrrsi01qsq" path="res://Scenes/Scenes/ufo_3.gd" id="6_vo037"]
+[ext_resource type="Script" uid="uid://claink81xu2gf" path="res://Scenes/Scenes/ufo_4.gd" id="7_8e4uv"]
+[ext_resource type="PackedScene" uid="uid://b3eqyo6guma2n" path="res://Scenes/Scenes/bullet.tscn" id="7_8hyri"]
+[ext_resource type="Script" uid="uid://dfxytbxql38jp" path="res://Scenes/Scenes/ufo_5.gd" id="8_ewwhp"]
+[ext_resource type="Script" uid="uid://ddeoarga3k0av" path="res://Scenes/Scenes/ufo_6.gd" id="9_erun8"]
+[ext_resource type="Script" uid="uid://dixngjg6este4" path="res://Scenes/Scenes/ufo_7.gd" id="10_5k555"]
+[ext_resource type="Script" uid="uid://cttmbp5uhxvpj" path="res://Scenes/Scenes/ufo_8.gd" id="11_p5qkp"]
+[ext_resource type="Script" uid="uid://bvrq0wnd05or" path="res://Scenes/Scenes/ufo_9.gd" id="12_a4aye"]
+[ext_resource type="Script" uid="uid://giaddeyttyd5" path="res://Scenes/Scenes/ufo_10.gd" id="13_scxjx"]
+[ext_resource type="Script" uid="uid://bbtu5dejotsq5" path="res://Scenes/Scenes/ufo_11.gd" id="14_ol83d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5j1ii"]
 size = Vector2(1172, 27)
 
+[sub_resource type="Animation" id="Animation_h5afm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_s70ru"]
+resource_name = "Sliding"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tiqo1"]
+_data = {
+&"RESET": SubResource("Animation_h5afm"),
+&"Sliding": SubResource("Animation_s70ru")
+}
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j2w3y"]
 size = Vector2(121, 57)
 
+[sub_resource type="Animation" id="Animation_tiqo1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO2/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UFO2/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_32gti"]
+resource_name = "Sliding2"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO2/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UFO2/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8hyri"]
+_data = {
+&"RESET": SubResource("Animation_tiqo1"),
+&"Sliding2": SubResource("Animation_32gti")
+}
+
+[sub_resource type="Animation" id="Animation_8hyri"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-29, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(42.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_ykq8t"]
+resource_name = "Sliding3"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vo037"]
+_data = {
+&"RESET": SubResource("Animation_8hyri"),
+&"Sliding3": SubResource("Animation_ykq8t")
+}
+
+[sub_resource type="Animation" id="Animation_8e4uv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_jkdpr"]
+resource_name = "Sliding4"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pwfwc"]
+_data = {
+&"RESET": SubResource("Animation_8e4uv"),
+&"Sliding4": SubResource("Animation_jkdpr")
+}
+
+[sub_resource type="Animation" id="Animation_duvhy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../../UFO5/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../../UFO5/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_xcw8c"]
+resource_name = "Sliding5"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../../UFO5/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../../UFO5/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ig4wd"]
+_data = {
+&"RESET": SubResource("Animation_duvhy"),
+&"Sliding5": SubResource("Animation_xcw8c")
+}
+
+[sub_resource type="Animation" id="Animation_vg3h7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../../UFO6/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../../UFO6/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_ewwhp"]
+resource_name = "Sliding6"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../../UFO6/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../../UFO6/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_erun8"]
+_data = {
+&"RESET": SubResource("Animation_vg3h7"),
+&"Sliding6": SubResource("Animation_ewwhp")
+}
+
+[sub_resource type="Animation" id="Animation_5k555"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_p5qkp"]
+resource_name = "Sliding7"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a4aye"]
+_data = {
+&"RESET": SubResource("Animation_5k555"),
+&"Sliding7": SubResource("Animation_p5qkp")
+}
+
+[sub_resource type="Animation" id="Animation_scxjx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../UFO8/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../UFO8/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_ol83d"]
+resource_name = "Sliding8"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../UFO8/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../UFO8/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pm3to"]
+_data = {
+&"RESET": SubResource("Animation_scxjx"),
+&"Sliding8": SubResource("Animation_ol83d")
+}
+
+[sub_resource type="Animation" id="Animation_wl0ky"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../UFO9/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../UFO9/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_rrhfn"]
+resource_name = "Sliding9"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../UFO9/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../UFO9/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hvamf"]
+_data = {
+&"RESET": SubResource("Animation_wl0ky"),
+&"Sliding9": SubResource("Animation_rrhfn")
+}
+
+[sub_resource type="Animation" id="Animation_gcmol"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../UFO10/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../UFO10/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_jicwy"]
+resource_name = "Sliding10"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../UFO10/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../UFO10/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_su0hq"]
+_data = {
+&"RESET": SubResource("Animation_gcmol"),
+&"Sliding10": SubResource("Animation_jicwy")
+}
+
+[sub_resource type="Animation" id="Animation_dfxa8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../UFO11/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(38, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../UFO11/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(109.5, 155.5)]
+}
+
+[sub_resource type="Animation" id="Animation_waqhd"]
+resource_name = "Sliding11"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../UFO11/UFO:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-29, 84), Vector2(38, 84), Vector2(105, 84)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../UFO11/Area2D/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(42.5, 155.5), Vector2(109.5, 155.5), Vector2(176.5, 155.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s3cnf"]
+_data = {
+&"RESET": SubResource("Animation_dfxa8"),
+&"Sliding11": SubResource("Animation_waqhd")
+}
+
 [node name="Minigame_3" type="Node2D" unique_id=1528152037]
+script = ExtResource("1_32gti")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=241600549]
 position = Vector2(-4, 632)
@@ -34,8 +731,9 @@ texture = ExtResource("1_h5afm")
 flip_h = true
 flip_v = true
 
-[node name="UFO1" type="Node2D" parent="." unique_id=351864751]
+[node name="UFO1" type="Node2D" parent="." unique_id=351864751 groups=["UFOs"]]
 position = Vector2(84, -50)
+script = ExtResource("2_tiqo1")
 
 [node name="UFO" type="TextureRect" parent="UFO1" unique_id=614889256]
 offset_left = 38.0
@@ -46,23 +744,33 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation" type="AnimationPlayer" parent="UFO1" unique_id=1368568870]
+libraries/ = SubResource("AnimationLibrary_tiqo1")
+autoplay = &"Sliding"
+
 [node name="Area2D" type="Area2D" parent="UFO1" unique_id=1968081928]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO1/Area2D" unique_id=196942927]
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO2" type="Node2D" parent="." unique_id=42253948]
+[node name="UFO2" type="Node2D" parent="." unique_id=42253948 groups=["UFOs"]]
 position = Vector2(339, -50)
+script = ExtResource("5_ykq8t")
 
 [node name="UFO" type="TextureRect" parent="UFO2" unique_id=856725194]
 offset_left = 38.0
 offset_top = 84.0
-offset_right = 181.0
+offset_right = 181.00003
 offset_bottom = 227.0
 texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="Animation2" type="AnimationPlayer" parent="UFO2" unique_id=1609927350]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_8hyri")
+autoplay = &"Sliding2"
 
 [node name="Area2D" type="Area2D" parent="UFO2" unique_id=1499658500]
 
@@ -70,26 +778,32 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO3" type="Node2D" parent="." unique_id=853860826]
+[node name="UFO3" type="Node2D" parent="." unique_id=853860826 groups=["UFOs"]]
 position = Vector2(594, -50)
+script = ExtResource("6_vo037")
 
 [node name="UFO" type="TextureRect" parent="UFO3" unique_id=392070107]
-offset_left = 38.0
+offset_left = -29.0
 offset_top = 84.0
-offset_right = 181.0
+offset_right = 114.0
 offset_bottom = 227.0
 texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation3" type="AnimationPlayer" parent="UFO3" unique_id=1488069423]
+libraries/ = SubResource("AnimationLibrary_vo037")
+autoplay = &"Sliding3"
+
 [node name="Area2D" type="Area2D" parent="UFO3" unique_id=1495396974]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO3/Area2D" unique_id=1471655501]
-position = Vector2(109.5, 155.5)
+position = Vector2(42.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO4" type="Node2D" parent="." unique_id=370466815]
+[node name="UFO4" type="Node2D" parent="." unique_id=370466815 groups=["UFOs"]]
 position = Vector2(849, -50)
+script = ExtResource("7_8e4uv")
 
 [node name="UFO" type="TextureRect" parent="UFO4" unique_id=707556723]
 offset_left = 38.0
@@ -100,14 +814,19 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation4" type="AnimationPlayer" parent="UFO4" unique_id=1628176761]
+libraries/ = SubResource("AnimationLibrary_pwfwc")
+autoplay = &"Sliding4"
+
 [node name="Area2D" type="Area2D" parent="UFO4" unique_id=2059321832]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO4/Area2D" unique_id=57413201]
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO5" type="Node2D" parent="." unique_id=1533955518]
+[node name="UFO5" type="Node2D" parent="." unique_id=1533955518 groups=["UFOs"]]
 position = Vector2(211, 35)
+script = ExtResource("8_ewwhp")
 
 [node name="UFO" type="TextureRect" parent="UFO5" unique_id=1434761090]
 offset_left = 38.0
@@ -118,14 +837,20 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation5" type="AnimationPlayer" parent="UFO5" unique_id=1633944695]
+root_node = NodePath("../../UFO4/Area2D/CollisionShape2D")
+libraries/ = SubResource("AnimationLibrary_ig4wd")
+autoplay = &"Sliding5"
+
 [node name="Area2D" type="Area2D" parent="UFO5" unique_id=1887652505]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO5/Area2D" unique_id=1728723734]
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO6" type="Node2D" parent="." unique_id=641971513]
+[node name="UFO6" type="Node2D" parent="." unique_id=641971513 groups=["UFOs"]]
 position = Vector2(466, 35)
+script = ExtResource("9_erun8")
 
 [node name="UFO" type="TextureRect" parent="UFO6" unique_id=1788214724]
 offset_left = 38.0
@@ -136,14 +861,20 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation6" type="AnimationPlayer" parent="UFO6" unique_id=1773638340]
+root_node = NodePath("../../UFO5/Area2D/CollisionShape2D")
+libraries/ = SubResource("AnimationLibrary_erun8")
+autoplay = &"Sliding6"
+
 [node name="Area2D" type="Area2D" parent="UFO6" unique_id=512044669]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO6/Area2D" unique_id=2022511168]
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO7" type="Node2D" parent="." unique_id=808887509]
+[node name="UFO7" type="Node2D" parent="." unique_id=808887509 groups=["UFOs"]]
 position = Vector2(721, 35)
+script = ExtResource("10_5k555")
 
 [node name="UFO" type="TextureRect" parent="UFO7" unique_id=550207826]
 offset_left = 38.0
@@ -154,14 +885,19 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation7" type="AnimationPlayer" parent="UFO7" unique_id=1018556760]
+libraries/ = SubResource("AnimationLibrary_a4aye")
+autoplay = &"Sliding7"
+
 [node name="Area2D" type="Area2D" parent="UFO7" unique_id=2014225125]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO7/Area2D" unique_id=1986798935]
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO8" type="Node2D" parent="." unique_id=1052335215]
+[node name="UFO8" type="Node2D" parent="." unique_id=1052335215 groups=["UFOs"]]
 position = Vector2(84, 120)
+script = ExtResource("11_p5qkp")
 
 [node name="UFO" type="TextureRect" parent="UFO8" unique_id=2020837152]
 offset_left = 38.0
@@ -172,14 +908,20 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation8" type="AnimationPlayer" parent="UFO8" unique_id=1415485768]
+root_node = NodePath("../../UFO7/Animation7")
+libraries/ = SubResource("AnimationLibrary_pm3to")
+autoplay = &"Sliding8"
+
 [node name="Area2D" type="Area2D" parent="UFO8" unique_id=25297434]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO8/Area2D" unique_id=2025243578]
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO9" type="Node2D" parent="." unique_id=971820882]
+[node name="UFO9" type="Node2D" parent="." unique_id=971820882 groups=["UFOs"]]
 position = Vector2(339, 120)
+script = ExtResource("12_a4aye")
 
 [node name="UFO" type="TextureRect" parent="UFO9" unique_id=375010661]
 offset_left = 38.0
@@ -190,14 +932,20 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation9" type="AnimationPlayer" parent="UFO9" unique_id=1370345744]
+root_node = NodePath("../../UFO8/Animation8")
+libraries/ = SubResource("AnimationLibrary_hvamf")
+autoplay = &"Sliding9"
+
 [node name="Area2D" type="Area2D" parent="UFO9" unique_id=287485150]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO9/Area2D" unique_id=299687004]
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO10" type="Node2D" parent="." unique_id=420512335]
+[node name="UFO10" type="Node2D" parent="." unique_id=420512335 groups=["UFOs"]]
 position = Vector2(594, 120)
+script = ExtResource("13_scxjx")
 
 [node name="UFO" type="TextureRect" parent="UFO10" unique_id=1201285213]
 offset_left = 38.0
@@ -208,14 +956,20 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation10" type="AnimationPlayer" parent="UFO10" unique_id=1534179031]
+root_node = NodePath("../../UFO9/Animation9")
+libraries/ = SubResource("AnimationLibrary_su0hq")
+autoplay = &"Sliding10"
+
 [node name="Area2D" type="Area2D" parent="UFO10" unique_id=1395744603]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO10/Area2D" unique_id=17793995]
 position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
-[node name="UFO11" type="Node2D" parent="." unique_id=920586592]
+[node name="UFO11" type="Node2D" parent="." unique_id=920586592 groups=["UFOs"]]
 position = Vector2(849, 120)
+script = ExtResource("14_ol83d")
 
 [node name="UFO" type="TextureRect" parent="UFO11" unique_id=1736559498]
 offset_left = 38.0
@@ -226,6 +980,11 @@ texture = ExtResource("2_yyy0a")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Animation11" type="AnimationPlayer" parent="UFO11" unique_id=1164068096]
+root_node = NodePath("../../UFO10/Animation10")
+libraries/ = SubResource("AnimationLibrary_s3cnf")
+autoplay = &"Sliding11"
+
 [node name="Area2D" type="Area2D" parent="UFO11" unique_id=1034389529]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UFO11/Area2D" unique_id=389521839]
@@ -233,3 +992,31 @@ position = Vector2(109.5, 155.5)
 shape = SubResource("RectangleShape2D_j2w3y")
 
 [node name="Player2" parent="." unique_id=1782395231 instance=ExtResource("3_h5afm")]
+
+[node name="ThemedTimer" parent="." unique_id=142063373 instance=ExtResource("4_s70ru")]
+
+[node name="Bullet" parent="." unique_id=2014318825 instance=ExtResource("7_8hyri")]
+position = Vector2(-25, 29)
+
+[connection signal="ufos_shot" from="UFO1" to="." method="_on_ufo_1_ufos_shot"]
+[connection signal="area_entered" from="UFO1/Area2D" to="UFO1" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO2" to="." method="_on_ufo_2_ufos_shot"]
+[connection signal="area_entered" from="UFO2/Area2D" to="UFO2" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO3" to="." method="_on_ufo_3_ufos_shot"]
+[connection signal="area_entered" from="UFO3/Area2D" to="UFO3" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO4" to="." method="_on_ufo_4_ufos_shot"]
+[connection signal="area_entered" from="UFO4/Area2D" to="UFO4" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO5" to="." method="_on_ufo_5_ufos_shot"]
+[connection signal="area_entered" from="UFO5/Area2D" to="UFO5" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO6" to="." method="_on_ufo_6_ufos_shot"]
+[connection signal="area_entered" from="UFO6/Area2D" to="UFO6" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO7" to="." method="_on_ufo_7_ufos_shot"]
+[connection signal="area_entered" from="UFO7/Area2D" to="UFO7" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO8" to="." method="_on_ufo_8_ufos_shot"]
+[connection signal="area_entered" from="UFO8/Area2D" to="UFO8" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO9" to="." method="_on_ufo_9_ufos_shot"]
+[connection signal="area_entered" from="UFO9/Area2D" to="UFO9" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO10" to="." method="_on_ufo_10_ufos_shot"]
+[connection signal="area_entered" from="UFO10/Area2D" to="UFO10" method="_on_area_2d_area_entered"]
+[connection signal="ufos_shot" from="UFO11" to="." method="_on_ufo_11_ufos_shot"]
+[connection signal="area_entered" from="UFO11/Area2D" to="UFO11" method="_on_area_2d_area_entered"]
