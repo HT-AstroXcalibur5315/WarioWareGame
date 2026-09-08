@@ -53,4 +53,4 @@ Simply press [here](https://ht-astroxcalibur5315.itch.io/star-chase), then "run 
 - [AmateurWare](https://github.com/amateurtechguy/AmateurWare/blob/main/README.md?plain=1)
 - [@Shreyansh (for all the help with my time-tracking issues)](https://stardance.hackclub.com/@Shreyansh)  
 
-#### I hope you enjoy the game and good luck!  - HT
+#### I hope you enjoy the game and good luck!:)  - HT
